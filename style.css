@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Nunito&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background-image: url(images/background.jpg);
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.726);
+}
+
+#content {
+    display: grid;
+    grid-template-rows: 2fr 1fr 10fr;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "main";
+    height: 100vh;
+}
+
+header {
+    border: 1px solid red;
+    grid-area: header;
+    background-color: rgba(255, 255, 255, 0.726);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+header > h1 {
+    color: green;
+    align-self: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 50px;
+}
+
+nav {
+    border: 1px solid blue;
+    grid-area: nav;
+    background-color: green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    
+}
+
+a {
+    color: white;
+    font-size: 20px;
+}
+
+main {
+    border: 3px solid rgb(240, 52, 247);
+    grid-area: main;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section {
+    background-color: white;
+    width: 60%;
+    height: 80%;
+    padding: 20px;
+    border-radius: 20px;
+    border: 2px solid orange;
+    
+}
+
+section > img {
+    width: 30%;
+}
