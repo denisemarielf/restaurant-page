@@ -4,9 +4,9 @@ const home = function() {
     const img = new Image();
     const p = document.createElement('p');
     img.src = "images/our-philosophy.jpg";
-    h1.innerHTML = "Our Philosophy";
+    h1.innerHTML = "WELCOME";
     p.innerHTML = "We are an organic, vegetarian and sustainable restaurant. Our menu combines a variety of gourmet vegetarian culinary delights with a focus on local, seasonal ingredients."
-    section.append(h1, img, p);
+    section.append(h1, p);
 }
 
 export default home;
